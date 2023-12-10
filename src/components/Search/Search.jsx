@@ -3,14 +3,14 @@ import styles from "./Search.module.css";
 import { ReactComponent as SearchIcon } from "../assests/searchicon.svg";
 
 export default function Search({ placeholder }) {
-  const onsubmit = (e) => {
+  const onSubmit = (e) => {
     e.preventDefault();
   };
   return (
-      <form className={styles.wrapper} onSubmit={onsubmit}>
+      <form className={styles.wrapper} onSubmit={onSubmit}>
         <input className={styles.search} placeholder={placeholder} required />
-        <button className={styles.searchButton}>
-          <SearchIcon />
+        <button type="submit" className={styles.searchButton}>
+          <SearchIcon/>
         </button>
       </form>
   );

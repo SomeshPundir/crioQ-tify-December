@@ -2,6 +2,7 @@
   --color-primary:#34c94b;
   --color-black:#121212;
   --color-white:#ffffff;
+  --body-font:"Poppins",sans-serif;
 }
 *,
 *::before,
@@ -15,7 +16,7 @@ html, body{
   height: 100%;
 }
 body{
-  font-family: "poppins",sans-serif;
+  font-family:var(--body-font);
   line-height: 1.5;
   -webkit-font-smoothing:antialiased;
   background-color: var(--color-black);
